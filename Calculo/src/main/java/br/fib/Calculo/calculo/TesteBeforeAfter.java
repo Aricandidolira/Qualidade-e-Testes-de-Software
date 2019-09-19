@@ -22,7 +22,7 @@ public class TesteBeforeAfter {
 		}
 
 		@Test
-		public void testeSalario() {
+		public void inserirNovoSalario() {
 			driver.get("http://192.168.5.115:9098/calculator/new");
 			WebElement nome = driver.findElement(By.name("name"));
 			WebElement dependentes = driver.findElement(By.name("dependents"));
@@ -49,7 +49,7 @@ public class TesteBeforeAfter {
 		}
 
 		@Test
-		public void testeNomeVazio() {
+		public void tentandoInserirUmNomeVazio() {
 
 			driver.get("http://192.168.5.115:9098/calculator/new");
 			WebElement nome = driver.findElement(By.name("name"));
@@ -75,7 +75,7 @@ public class TesteBeforeAfter {
 		}
 
 		@Test
-		public void testeNumerosVazios() {
+		public void tentandoInserirNumerosVazios() {
 
 			driver.get("http://192.168.5.115:9098/calculator/new");
 			WebElement nome = driver.findElement(By.name("name"));
